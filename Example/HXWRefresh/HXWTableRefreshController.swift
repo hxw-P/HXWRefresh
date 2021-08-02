@@ -30,6 +30,8 @@ class HXWTableRefreshController: UIViewController {
         myTableView.backgroundColor = .white
         navigationController?.navigationBar.tintColor = .clear
         
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .done, target: self, action: #selector(back))
+        
 //        if #available(iOS 11.0, *) {
 //
 //            myTableView.contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.never;
@@ -120,6 +122,10 @@ class HXWTableRefreshController: UIViewController {
         myTableView.startRefreshing()
     }
 
+    @objc func back() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 //MARK: /**HXWRefreshHeader代理**/
