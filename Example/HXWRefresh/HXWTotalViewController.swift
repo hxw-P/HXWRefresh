@@ -25,6 +25,8 @@ class HXWTotalViewController: UIViewController {
         myTableView.frame = view.bounds
         view.addSubview(myTableView)
         
+        title = "HXWRefresh"
+        
         dataAry = ["普通下拉刷新","有刷新完成提示","仿大众点评下拉刷新","普通上啦加载","没有松开后加载状态的上啦加载","有尾巴的上拉加载，可点击加载更多"]
     }
 
@@ -51,7 +53,7 @@ extension HXWTotalViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
 //        present(HXWTableRefreshController(), animated: true, completion: nil)
         let tableRefresh = HXWTableRefreshController()
-        tableRefresh.type = dataAry[indexPath.row] as NSString
+        tableRefresh.type = dataAry[indexPath.row]
         navigationController?.pushViewController(tableRefresh, animated: true)
     }
     

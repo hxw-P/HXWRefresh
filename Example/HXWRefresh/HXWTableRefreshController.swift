@@ -14,7 +14,7 @@ class HXWTableRefreshController: UIViewController {
     var myTableView = UITableView()
     var dataAry = [String]()
     var firstPageAry = [String]()
-    var type: NSString = ""
+    var type: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,15 @@ class HXWTableRefreshController: UIViewController {
         myTableView.backgroundColor = .white
         navigationController?.navigationBar.tintColor = .clear
         
-        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .done, target: self, action: #selector(back))
+        // 返回键
+        let backBtn = UIButton.init(frame: CGRect (x: 0, y: 0, width: 40, height: 40))
+        backBtn.backgroundColor = .clear
+        backBtn.setTitle("返回", for: .normal)
+        backBtn.setTitleColor(.black, for: .normal)
+        backBtn.addTarget(self, action: #selector(back), for: .touchUpInside)
+        navigationItem.setLeftBarButton(UIBarButtonItem.init(customView: backBtn), animated: true)
+        
+        title = type
         
 //        if #available(iOS 11.0, *) {
 //
