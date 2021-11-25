@@ -204,7 +204,9 @@ extension HXWRefreshFooter {
             return
         }
         let offsetY = point.y//向上滑动point.y>0  在navigation下初始为-64
+        #if DEBUG
         print("offsetY =========== \(offsetY)")
+        #endif
         
         if isInstant {
             //MARK: /**这种是上拉加载后直接触发加载状态**/

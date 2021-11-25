@@ -49,7 +49,7 @@
 		B8AAA49B26AFB6180021027C /* HXWTableRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWTableRefreshController.swift; sourceTree = "<group>"; };
 		B8AAA49D26AFB6180021027C /* HXWRefreshDianPingHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWRefreshDianPingHeader.swift; sourceTree = "<group>"; };
 		B8AAA49E26AFB6180021027C /* HXWTotalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWTotalViewController.swift; sourceTree = "<group>"; };
-		CC7B56991AB507B08A8DCB6B /* HXWRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HXWRefresh.podspec; path = ../HXWRefresh.podspec; sourceTree = "<group>"; };
+		CC7B56991AB507B08A8DCB6B /* HXWRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HXWRefresh.podspec; path = ../HXWRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED2641388D46C0D3357FB0BF /* Pods-HXWRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXWRefresh_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HXWRefresh_Tests/Pods-HXWRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

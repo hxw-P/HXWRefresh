@@ -50,9 +50,9 @@ class HXWTableRefreshController: UIViewController {
 //        }
         if type == "普通下拉刷新" {
             //代理回调
-//            myTableView.hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader(), delegate: self)
+//            myTableView.hxw_addRefreshHeaderView(refreshHeader: HXWRefreshCycleHeader(), delegate: self)
             //block回调
-            myTableView.hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader()) {
+            myTableView.hxw_addRefreshHeaderView(refreshHeader: HXWRefreshCycleHeader()) {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
                     self.dataAry = self.firstPageAry
                     self.myTableView.reloadData()
@@ -193,7 +193,6 @@ extension HXWTableRefreshController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("insettop ==== \(String(describing: self.myTableView.contentInset.top))")
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

@@ -96,11 +96,10 @@ open class HXWRefreshHeader: HXWRefreshView{
     
 }
 
-//MARK: /***********************************************刷新过程，自定义header重载以下方法***********************************************/
+//MARK:*************************下拉刷新过程，子类重写以下方法*************************
 extension HXWRefreshHeader {
     
-    //MARK: /**普通**/
-    
+    //MARK: 普通状态
     @objc open func normal() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWPullDownToRefresh)
         if upOrDown == "up" {
@@ -110,10 +109,10 @@ extension HXWRefreshHeader {
             })
         }
         imgIndicator.isHidden = false
-        activityIndicator.isHidden = true;
+        activityIndicator.isHidden = true
     }
-    
-    //MARK: /**即将刷新**/
+
+    //MARK: 即将刷新
     @objc open func willRefresh() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWReleaseToRefresh)
         if upOrDown == "down" {
@@ -124,7 +123,7 @@ extension HXWRefreshHeader {
         }
     }
 
-    //MARK: /**刷新中**/
+    //MARK: 刷新中
     @objc open func refreshing() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWRefreshing)
         if upOrDown == "up" {
@@ -143,8 +142,8 @@ extension HXWRefreshHeader {
             refreshBlock!()
         }
     }
-    
-    //MARK: /**刷新完成**/
+
+    //MARK: 刷新完成
     @objc open func refreshed() {
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true;
@@ -164,12 +163,12 @@ extension HXWRefreshHeader {
             textLbl.text = Bundle.HXWLocalizedString(key: HXWPullDownToRefresh)
         }
     }
-    
-    //MARK: /**等待下一次刷新**/
+
+    //MARK: 等待下一次刷新
     @objc open func waitNextRefresh() {
     }
 
-    //MARK: /**更新拖动进度**/
+    //MARK: 更新拖动进度
     @objc open func updateProgress() {
     }
 
@@ -247,7 +246,9 @@ extension HXWRefreshHeader {
             return
         }
         let offsetY = CGFloat(0 - point.y)//向下滑动point.y>0
-                print("offsetY e=========== \(offsetY)")
+        #if DEBUG
+        print("offsetY e=========== \(offsetY)")
+        #endif
         if (offsetY < 0) {
             return
         }
@@ -258,15 +259,20 @@ extension HXWRefreshHeader {
             UIView.animate(withDuration: 0.3, animations: {
                 self.contentScrollview?.contentInset = UIEdgeInsetsMake((self.contentScrollview?.contentInset.top)! + self.headerHeight, 0, 0, 0);
             })
-            //            print("松手后刷新中 Inset.top =========== \((contentScrollview?.contentInset.top)!)")
+            #if DEBUG
+            print("松手后刷新中 Inset.top =========== \((contentScrollview?.contentInset.top)!)")
+            #endif
         }
         
         //MARK: /**触发即将刷新状态: 处于普通状态或者等待下次刷新状态，向下拖动距离大于默认高度，scrollview在拖动状态**/
+        #if DEBUG
         if #available(iOS 11.0, *) {
             print("insettop ==== \(String(describing: contentScrollview?.adjustedContentInset.top))")
         } else {
             print("insettop ==== \(String(describing: contentScrollview?.contentInset.top))")
         }
+        #endif
+
         if #available(iOS 11.0, *) {
             if ((offsetY >= (headerHeight + (contentScrollview?.adjustedContentInset.top)!))&&(state == .normal||state == .waitNextRefresh)&&((contentScrollview?.isDragging)!)) {
                 state = .willRefrsh

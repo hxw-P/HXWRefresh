@@ -64,7 +64,6 @@ extension HXWRefreshDianPingHeader {
     
     //MARK: /**更新拖动进度**/
     override func updateProgress() {
-        print("------------%f",progress)
         let imageName = "dropdown_anim__000\(Int(progress * 60))"
         let image = UIImage (named: imageName)
         imageView.image = image

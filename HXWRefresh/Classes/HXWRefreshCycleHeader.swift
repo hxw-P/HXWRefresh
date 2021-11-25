@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HXWRefreshCycleHeader: HXWRefreshHeader {
+open class HXWRefreshCycleHeader: HXWRefreshHeader {
 
     lazy var refreshIndicater: HXWRefreshIndicater = { [unowned self] in
         var indicater = HXWRefreshIndicater()
@@ -23,11 +23,11 @@ class HXWRefreshCycleHeader: HXWRefreshHeader {
         addSubview(refreshIndicater)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         refreshIndicater.frame = CGRect (x: 100, y: 20, width: height - 40, height: height - 40)
         textLbl.frame = CGRect (x: refreshIndicater.right + 30, y: 0, width: CalcTextWidth(textStr: "下拉加载", font: textLbl.font, height: height), height: height)
     }
@@ -45,33 +45,35 @@ class HXWRefreshCycleHeader: HXWRefreshHeader {
 extension HXWRefreshCycleHeader {
     
     //MARK: /**普通**/
-    override func normal() {
+    open override func normal() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWPullDownToRefresh)
     }
     
     //MARK: /**即将刷新**/
-    override func willRefresh() {
+    open override func willRefresh() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWReleaseToRefresh)
     }
     
     //MARK: /**刷新中**/
-    override func refreshing() {
+    open override func refreshing() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWRefreshing)
         refreshIndicater.startRotate()
         headerRefreshDelegate?.refresh()
+        if refreshBlock != nil {
+            refreshBlock!()
+        }
     }
     
     //MARK: /**刷新完成**/
-    override func refreshed() {
+    open override func refreshed() {
         textLbl.text = Bundle.HXWLocalizedString(key: HXWPullDownToRefresh)
         refreshIndicater.endRotate()
         refreshIndicater.progress = 0
     }
     
     //MARK: /**更新拖动进度**/
-    override func updateProgress() {
+    open override func updateProgress() {
         refreshIndicater.progress = progress
     }
     
 }
-
