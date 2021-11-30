@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HXWRefresh'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'swift版下拉刷新上拉加载更多控件，支持多种个性化，多种样式'
 
 # This description is used to generate tags and improve search results.
