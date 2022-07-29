@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41DE561561B1ABD8D1C605BA /* Pods_HXWRefresh_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529E0713A4E25E33E4A9E071 /* Pods_HXWRefresh_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		71011FEC8DE5FDCCE6FAC040 /* Pods_HXWRefresh_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A885EB622C95119220BC045B /* Pods_HXWRefresh_Tests.framework */; };
 		B8AAA49F26AFB6180021027C /* HXWTableRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AAA49B26AFB6180021027C /* HXWTableRefreshController.swift */; };
 		B8AAA4A026AFB6180021027C /* HXWRefreshDianPingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AAA49D26AFB6180021027C /* HXWRefreshDianPingHeader.swift */; };
 		B8AAA4A126AFB6180021027C /* HXWTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AAA49E26AFB6180021027C /* HXWTotalViewController.swift */; };
@@ -30,9 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C8DEC365C315A430C93F2D8 /* Pods-HXWRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXWRefresh_Example.release.xcconfig"; path = "Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
-		35CB6C35D06D992E37CD54DF /* Pods-HXWRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXWRefresh_Example.debug.xcconfig"; path = "Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		529E0713A4E25E33E4A9E071 /* Pods_HXWRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXWRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* HXWRefresh_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXWRefresh_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,15 +37,12 @@
 		607FACE51AFB9204008FA782 /* HXWRefresh_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXWRefresh_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		722BDC66074AFF650AF680E5 /* Pods-HXWRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXWRefresh_Tests.release.xcconfig"; path = "Target Support Files/Pods-HXWRefresh_Tests/Pods-HXWRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A885EB622C95119220BC045B /* Pods_HXWRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXWRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB934BB014217EBD914B115B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B3BC73508C2C5CBD36588A45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B8AAA49B26AFB6180021027C /* HXWTableRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWTableRefreshController.swift; sourceTree = "<group>"; };
 		B8AAA49D26AFB6180021027C /* HXWRefreshDianPingHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWRefreshDianPingHeader.swift; sourceTree = "<group>"; };
 		B8AAA49E26AFB6180021027C /* HXWTotalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWTotalViewController.swift; sourceTree = "<group>"; };
 		CC7B56991AB507B08A8DCB6B /* HXWRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HXWRefresh.podspec; path = ../HXWRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ED2641388D46C0D3357FB0BF /* Pods-HXWRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXWRefresh_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HXWRefresh_Tests/Pods-HXWRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DE561561B1ABD8D1C605BA /* Pods_HXWRefresh_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,24 +57,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71011FEC8DE5FDCCE6FAC040 /* Pods_HXWRefresh_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37911926182FFBD12D61AE4B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				35CB6C35D06D992E37CD54DF /* Pods-HXWRefresh_Example.debug.xcconfig */,
-				0C8DEC365C315A430C93F2D8 /* Pods-HXWRefresh_Example.release.xcconfig */,
-				ED2641388D46C0D3357FB0BF /* Pods-HXWRefresh_Tests.debug.xcconfig */,
-				722BDC66074AFF650AF680E5 /* Pods-HXWRefresh_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +70,6 @@
 				607FACD21AFB9204008FA782 /* Example for HXWRefresh */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				37911926182FFBD12D61AE4B /* Pods */,
-				A952A4D20263E156C5C6F6EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,15 +133,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		A952A4D20263E156C5C6F6EC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				529E0713A4E25E33E4A9E071 /* Pods_HXWRefresh_Example.framework */,
-				A885EB622C95119220BC045B /* Pods_HXWRefresh_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B8AAA49C26AFB6180021027C /* CustomerHeaderRefresh<自定义下拉刷新> */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +153,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				6B4C8E15FBAD67AD92FCABE8 /* [CP] Embed Pods Frameworks */,
+				703FF4C98AB5E9D58852BEEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,10 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HXWRefresh_Tests" */;
 			buildPhases = (
-				4C48AF9AACA568EE394A12FB /* [CP] Check Pods Manifest.lock */,
+				A7386B8C39529ACC296BE962 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				DDA888EA23FC05F8FE71673C /* [CP] Embed Pods Frameworks */,
+				E6FB84D7643422DC508B3774 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,28 +248,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C48AF9AACA568EE394A12FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HXWRefresh_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4EED2335B1F179A3EF579A9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,7 +276,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HXWRefresh/HXWRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -336,7 +285,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		703FF4C98AB5E9D58852BEEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXWRefresh_Example/Pods-HXWRefresh_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7386B8C39529ACC296BE962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXWRefresh_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA888EA23FC05F8FE71673C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXWRefresh_Tests/Pods-HXWRefresh_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FB84D7643422DC508B3774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HXWRefresh_Tests/Pods-HXWRefresh_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -436,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -482,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -492,11 +520,11 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CB6C35D06D992E37CD54DF /* Pods-HXWRefresh_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7CD3J75352;
 				INFOPLIST_FILE = HXWRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = hxw;
@@ -508,11 +536,11 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C8DEC365C315A430C93F2D8 /* Pods-HXWRefresh_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7CD3J75352;
 				INFOPLIST_FILE = HXWRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = hxw;
@@ -524,7 +552,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED2641388D46C0D3357FB0BF /* Pods-HXWRefresh_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -546,7 +573,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722BDC66074AFF650AF680E5 /* Pods-HXWRefresh_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
