@@ -15,6 +15,8 @@ class HXWTotalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
+        
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.separatorStyle = .none
@@ -25,6 +27,7 @@ class HXWTotalViewController: UIViewController {
         myTableView.frame = view.bounds
         view.addSubview(myTableView)
         
+        navigationController?.navigationBar.backgroundColor = UIColor.white
         title = "HXWRefresh"
         
         dataAry = ["普通下拉刷新","有刷新完成提示","仿大众点评下拉刷新","普通上啦加载","没有松开后加载状态的上啦加载","有尾巴的上拉加载，可点击加载更多"]

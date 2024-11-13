@@ -12,7 +12,8 @@ public extension Bundle{
     
     static var HXWRefreshBundle: Bundle? {
         struct StaticBundle {
-            static let rbundle: Bundle = Bundle(path: Bundle(path: Bundle(for: HXWRefreshView.classForCoder()).path(forResource: "HXWRefresh", ofType: "bundle")!)!.path(forResource: "Resource", ofType: "bundle")!)!
+            static let refreshStr: String =  Bundle(for: HXWRefreshView.self).path(forResource: "HXWRefresh", ofType: "bundle")!
+            static let rbundle: Bundle = Bundle(path: Bundle(path: refreshStr)!.path(forResource: "Resource", ofType: "bundle")!)!
         }
         return StaticBundle.rbundle
     }

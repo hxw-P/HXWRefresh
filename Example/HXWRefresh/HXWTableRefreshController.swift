@@ -18,6 +18,7 @@ class HXWTableRefreshController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         view.addSubview(myTableView)
         myTableView.frame = CGRect (x: 0, y: 0, width: view.width, height: view.height)
         myTableView.delegate = self
@@ -28,7 +29,6 @@ class HXWTableRefreshController: UIViewController {
         myTableView.showsHorizontalScrollIndicator = true
         myTableView.estimatedRowHeight = 44
         myTableView.backgroundColor = .white
-        navigationController?.navigationBar.tintColor = .clear
         
         // 返回键
         let backBtn = UIButton.init(frame: CGRect (x: 0, y: 0, width: 40, height: 40))

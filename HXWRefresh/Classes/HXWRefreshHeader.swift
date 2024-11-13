@@ -245,7 +245,7 @@ extension HXWRefreshHeader {
         guard let point = change?[NSKeyValueChangeKey.newKey] as? CGPoint else {
             return
         }
-        let offsetY = CGFloat(0 - point.y)//向下滑动point.y>0
+        let offsetY = CGFloat(0 - point.y)//向下滑动point.y < -90
         #if DEBUG
         print("offsetY e=========== \(offsetY)")
         #endif

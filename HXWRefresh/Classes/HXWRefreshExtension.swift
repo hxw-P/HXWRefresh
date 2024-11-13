@@ -43,31 +43,26 @@ public extension UIScrollView {
     
     //MARK: /**添加下拉刷新**/
     //默认下拉刷新
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate) {
         if hxwHeader != refreshHeader {
             hxwHeader?.removeFromSuperview()
             refreshHeader.headerRefreshDelegate = delegate
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
     
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshBlock:@escaping HXWRefreshBlock) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshBlock:@escaping HXWRefreshBlock) {
         if hxwHeader != refreshHeader {
             hxwHeader?.removeFromSuperview()
             refreshHeader.refreshBlock = refreshBlock
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
 
     //下拉刷新高度自定义
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate, refreshHeaderHeight: CGFloat) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate, refreshHeaderHeight: CGFloat) {
         refreshHeader.headerHeight = refreshHeaderHeight
         if hxwHeader != refreshHeader {
             hxwHeader?.removeFromSuperview()
@@ -75,11 +70,9 @@ public extension UIScrollView {
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
     
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshHeaderHeight: CGFloat, refreshBlock:@escaping HXWRefreshBlock) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshHeaderHeight: CGFloat, refreshBlock:@escaping HXWRefreshBlock) {
         refreshHeader.headerHeight = refreshHeaderHeight
         if hxwHeader != refreshHeader {
             hxwHeader?.removeFromSuperview()
@@ -87,7 +80,6 @@ public extension UIScrollView {
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
     
     //下拉刷新完成提示刷新成功或者失败
@@ -97,8 +89,7 @@ public extension UIScrollView {
      * @param refreshedHeaderHeight 刷新后提示刷新成功或者失败时的高度，默认和refreshHeaderHeight一样
      */
     //delegate
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate, refreshHeaderHeight: CGFloat, refreshedShowTime: Double, refreshedHeaderHeight: CGFloat) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, delegate:HXWRefreshHeaderDelegate, refreshHeaderHeight: CGFloat, refreshedShowTime: Double, refreshedHeaderHeight: CGFloat) {
         refreshHeader.headerHeight = refreshHeaderHeight
         refreshHeader.refreshedHeaderHeight = refreshedHeaderHeight
         refreshHeader.refreshedShowTime = refreshedShowTime
@@ -108,12 +99,10 @@ public extension UIScrollView {
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
     
     //block
-    @discardableResult
-    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshHeaderHeight: CGFloat, refreshedShowTime: Double, refreshedHeaderHeight: CGFloat, refreshBlock:@escaping HXWRefreshBlock) -> UIScrollView {
+    func hxw_addRefreshHeaderView(refreshHeader: HXWRefreshHeader, refreshHeaderHeight: CGFloat, refreshedShowTime: Double, refreshedHeaderHeight: CGFloat, refreshBlock:@escaping HXWRefreshBlock) {
         refreshHeader.headerHeight = refreshHeaderHeight
         refreshHeader.refreshedHeaderHeight = refreshedHeaderHeight
         refreshHeader.refreshedShowTime = refreshedShowTime
@@ -123,7 +112,6 @@ public extension UIScrollView {
             refreshHeader.contentScrollview = self
             hxwHeader = refreshHeader
         }
-        return self
     }
     
     //MARK: /**添加上拉加载**/
@@ -133,8 +121,7 @@ public extension UIScrollView {
      * @param isTail true: tableview的bottom要缩进一直显示footer，false: 普通样式上拉显示footer
      */
     //delegate
-    @discardableResult
-    func hxw_addRefreshFooterView(refreshFooter: HXWRefreshFooter, delegate:HXWRefreshFooterDelegate, refreshFooterHeight: CGFloat, isInstant: Bool, isTail: Bool) -> UIScrollView {
+    func hxw_addRefreshFooterView(refreshFooter: HXWRefreshFooter, delegate:HXWRefreshFooterDelegate, refreshFooterHeight: CGFloat, isInstant: Bool, isTail: Bool) {
         refreshFooter.isInstant = isInstant
         refreshFooter.isTail = isTail
         refreshFooter.footerHeight = refreshFooterHeight
@@ -144,12 +131,10 @@ public extension UIScrollView {
             refreshFooter.contentScrollview = self
             hxwFooter = refreshFooter
         }
-        return self
     }
     
     //block
-    @discardableResult
-    func hxw_addRefreshFooterView(refreshFooter: HXWRefreshFooter, refreshFooterHeight: CGFloat, isInstant: Bool, isTail: Bool, refreshBlock:@escaping HXWRefreshBlock) -> UIScrollView {
+    func hxw_addRefreshFooterView(refreshFooter: HXWRefreshFooter, refreshFooterHeight: CGFloat, isInstant: Bool, isTail: Bool, refreshBlock:@escaping HXWRefreshBlock) {
         refreshFooter.isInstant = isInstant
         refreshFooter.isTail = isTail
         refreshFooter.footerHeight = refreshFooterHeight
@@ -159,7 +144,6 @@ public extension UIScrollView {
             refreshFooter.contentScrollview = self
             hxwFooter = refreshFooter
         }
-        return self
     }
 
     //MARK: /**开始下拉刷新**/

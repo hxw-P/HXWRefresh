@@ -36,7 +36,7 @@ public protocol HXWRefreshFooterDelegate {
     func loadMore()
 }
 
-open class HXWRefreshView: UIView, UIScrollViewDelegate {
+open class HXWRefreshView: UIView {
 
     weak var contentScrollview: UIScrollView? {
         didSet
